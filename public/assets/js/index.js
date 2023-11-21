@@ -1,24 +1,3 @@
-
-
-//GIVEN a note-taking application
-//WHEN I open the Note Taker
-//TODO create a landing page html
-//THEN I am presented with a landing page with a link to a notes page
-//TODO create a button that takes you to a note page that has existing notes in the left hand column, and empty fields to enter a new note with a TITLE and TEXT in the right hand column
-//WHEN I click on the link to the notes page
-//THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-
-//WHEN I enter a new note title and the note’s text
-//TODO create a Save Note button and a Clear form button in the nav bar
-//THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
-//WHEN I click on the Save button
-//TODO create a function that saves new note in the left-column and the nav bar buttons disappear at the same time
-//THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes and the buttons in the navigation disappear
-//TODO when I click on an existing note in the list in the left-hand column, that note appears in the right-hand column and a "New Note" button appears in the navigation
-
-//WHEN I click on the "New Note" button in the navigation at the top of the page
-//THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
-
 let noteForm;
 let noteTitle;
 let noteText;
