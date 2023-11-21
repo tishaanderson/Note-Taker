@@ -1,9 +1,11 @@
 const express = require('express');
 
+const htmlRoutes = require('./htmlRoutes');
+const apiRoutes = require('./apiRoutes');
+
 const app = express();
 
-const htmlRoutes = require('./htmlRoutes');
-
 app.use(htmlRoutes);
+app.use('/api', apiRoutes);
 
 module.exports = app;
