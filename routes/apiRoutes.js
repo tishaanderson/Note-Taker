@@ -1,14 +1,17 @@
+//pulling in required files
 const router = require('express').Router();
 const fs = require('fs');
 const path = require('path');
 const fileName = './db/db.json';
 
+//get route for notes
 router.get('/notes', (req, res) => {
   const data = fs.readFileSync(fileName, 'utf8');
   const parsedData = JSON.parse(data);
   res.status(200).json(parsedData);
 });
 
+//post route for notes
 router.post('/notes', (req, res) => {
   const {title, text} = req.body;
   const data = fs.readFileSync(fileName, 'utf8');
@@ -23,6 +26,7 @@ router.post('/notes', (req, res) => {
   res.status(200).json({message: 'Note added successfully', note: newNote});
 });
 
+//delete route for notes
 router.delete('/notes/:id', (req, res) => {
   const noteId = parseInt(req.params.id);
 
@@ -42,4 +46,5 @@ router.delete('/notes/:id', (req, res) => {
   }
 });
 
+//exporting router
 module.exports = router;
