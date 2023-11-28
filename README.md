@@ -30,6 +30,10 @@ The app will be deployed using Heroku. When the app is initially opened, the use
 
 ### Test Sample
 
+
+https://github.com/tishaanderson/Note-Taker/assets/136303804/122faf1a-b024-437c-b4e7-b4c0b323b655
+
+
 ### Credits
 
 ### License
